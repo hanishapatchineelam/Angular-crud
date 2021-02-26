@@ -1,0 +1,30 @@
+<div class="modal-header">
+    <h5 class="modal-title">Enrollee Details</h5>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <table>
+        <tr>
+            <td>Id :</td>
+            <td>{{ viewFormData.id }}</td>
+        </tr>
+        <tr>
+            <td>Name :</td>
+            <td>{{ viewFormData.name }}</td>
+        </tr>
+        <tr>
+            <td>Activation Status :</td>
+            <td>{{ viewFormData.active ? 'Active' : 'In-active' }}</td>
+        </tr>
+        <tr>
+            <td>Date of birth :</td>
+            <td>{{ viewFormData.dateOfBirth }}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="modal-footer">
+
+</div>
